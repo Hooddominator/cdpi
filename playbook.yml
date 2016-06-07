@@ -1,15 +1,15 @@
 ---
-- hosts: all
+- hosts: web
   sudo: true
   vars_files:
     - vars/all.yml
   roles:
     - server
-    - vagrant_local
+#    - vagrant_local
     - nginx
-    - mysql
-    - rabbitmq
-    - elasticsearch
+#    - mysql
+#    - rabbitmq
+#    - elasticsearch
     - php
     - composer
     - app
