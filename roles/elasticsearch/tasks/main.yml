@@ -15,7 +15,8 @@
 #  changed_when: false
 #
 - name: Install Dependencies
-  apt: pkg=java8-runtime-headless state=latest
+  apt: pkg=openjdk-8-jre-headless state=latest
+  apt: pkg=oracle-java8-jdk state=latest
 
 - name: Download
   get_url: >
