@@ -7,9 +7,14 @@
     - server
 #    - vagrant_local
     - nginx
-#    - mysql
 #    - rabbitmq
-#    - elasticsearch
     - php
     - composer
     - app
+- hosts: db
+  sudo: true
+  vars_files:
+    - vars/all.yml
+  roles:
+    - mysql
+    - elasticsearch
