@@ -1,5 +1,5 @@
 ---
-- hosts: web
+- hosts: pi2
   sudo: true
   vars_files:
     - vars/all.yml
@@ -11,7 +11,7 @@
     - php
     - composer
     - app
-- hosts: db
+- hosts: pi3
   sudo: true
   vars_files:
     - vars/all.yml
