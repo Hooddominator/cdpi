@@ -1,0 +1,3 @@
+- hosts: pis
+  roles:
+     - { role: ihaolin.hosts-deploy, GROUP_NAME: 'pis' }
