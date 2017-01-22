@@ -1,3 +1,8 @@
+---
 - hosts: pis
+  become: yes
+  vars_files:
+    - vars/defaults.yml
   roles:
+    - mikolak.raspi-config
     - mvitale1989.inventory-hosts
