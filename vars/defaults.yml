@@ -18,7 +18,7 @@ raspi_config_locale: de_DE.UTF8
 raspi_config_timezone: UTC
 
 # set hostname
-raspi_config_hostname: {{ansible_hostname}}
+raspi_config_hostname: "{{ansible_hostname}}"
 
 # ensure camera support is on - CURRENTLY UNVERIFIED
 raspi_config_enable_camera: no
