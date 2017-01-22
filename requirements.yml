@@ -6,3 +6,5 @@
 - src: geerlingguy.raspberry-pi
 # more rpi-configs
 - src: mikolak.raspi-config
+# even rpi-configs
+- src: infothrill.rpi-boot-config
