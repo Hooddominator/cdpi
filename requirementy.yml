@@ -1,0 +1,8 @@
+## requirements.yml - for automatic import of roles in tower
+
+# deploy inventory hosts to /etc/hosts
+- src: ihaolin.hosts-deploy
+# some rpi-configs
+- src: geerlingguy.raspberry-pi
+# more rpi-configs
+- src: mikolak.raspi-config
