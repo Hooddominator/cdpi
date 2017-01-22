@@ -1,5 +1,7 @@
 # deploy inventory hosts to /etc/hosts
 - src: ihaolin.hosts-deploy
+# try this one
+- src: mvitale1989.inventory-hosts
 # rpi-config
 - src: geerlingguy.raspberry-pi
 # more rpi-configs
