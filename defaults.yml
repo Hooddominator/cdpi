@@ -1,8 +1,11 @@
 ---
-- hosts: pis
+- hosts: pi[0:8]
   become: yes
   vars_files:
     - vars/defaults.yml
   roles:
     - mikolak.raspi-config
     - mvitale1989.inventory-hosts
+  tasks:
+    - name: activate sshd
+      shell: update-rc.d ssh enable && invoke-rc.d ssh start
