@@ -1,5 +1,5 @@
 ---
-- hosts: pi[0:8]
+- hosts: pis
   become: yes
   vars_files:
     - vars/defaults.yml
